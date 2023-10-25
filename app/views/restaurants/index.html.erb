@@ -6,7 +6,7 @@
   <div class="border-top mt-3 pt-3">
     <ul class="list group">
       <% @restaurants.each do |restaurant| %>
-        <li class="m-2 list-group-item shadow-sm bg-light"><%= restaurant.name %> - <%= restaurant.category.capitalize %>
+        <li class="m-2 list-group-item shadow-sm bg-light d-flex justify-content-between"><%= restaurant.name %> - <%= restaurant.category.capitalize %>
         <%= link_to "See details", restaurant_path(restaurant), :class=>"btn btn-info" %></li>
         <br>
       <% end %>
